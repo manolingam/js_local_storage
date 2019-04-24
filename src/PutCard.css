@@ -1,0 +1,27 @@
+.putCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: 5px 5px rgb(128, 182, 167);
+    border-radius: 10px;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+button {
+    margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .putCard {
+        margin-bottom: 10px;
+    }
+    button {
+        margin: auto;
+    }    
+}

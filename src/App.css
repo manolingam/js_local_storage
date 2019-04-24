@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+.App {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  margin: 100px 50px 100px 50px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.mark {
+  text-align: center;
+}
+
+input {
+  line-height: 2em;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 5px;
+  align-content: center;
+}
+
+button {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.2em;
+  border: 2px solid crimson;
+  border-radius: 3px;
+  margin-top: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: crimson;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 700px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  p{
+    font-size: 1em;
+  }
+  input{
+    line-height: 1.5em;
+  }
+  button{
+    font-size: 0.7em;
+  }
+}
