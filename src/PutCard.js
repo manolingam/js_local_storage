@@ -6,7 +6,9 @@ var storePass = () => {
     var pass = document.getElementById('pass').value;
     document.getElementById('key').value = "";
     document.getElementById('pass').value = "";
-    if(localStorage.hasOwnProperty(key)) {
+    if(key === "" && pass === "") {
+        alert("You need to have some value over there!")
+    }else if(localStorage.hasOwnProperty(key)) {
         alert("That is in my memory already with a different key.");
     }else {
         localStorage.setItem(key, pass);
